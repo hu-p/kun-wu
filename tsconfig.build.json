@@ -1,0 +1,23 @@
+// 根据 tsconfig.build.json 中定义的配置编译 TypeScript 文件
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        // 指定输出目录
+        "outDir": "dist",
+        // 不生成输出文件
+        "noEmit": false,
+        // 仅输出 d.ts 文件，不输出 JavaScript 文件。
+        "emitDeclarationOnly": true,
+        // 从项目中的 TypeScript 和 JavaScript 文件生成 .d.ts 文件。
+        "declaration": true,
+        "baseUrl": ".",
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/stories/*",
+        "node_modules",
+        "src/export/*"
+    ]
+}
