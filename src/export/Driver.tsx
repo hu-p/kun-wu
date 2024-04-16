@@ -31,10 +31,10 @@ export const Driver = () => {
                                 }
                             },
                             {
-                                element: "#driver-3",
+                               element: "#driver-3",
                                 popover: {
                                     title: "Why Driver.js",
-                                    description: <div ><img className="size-10" src="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect/element-box-diagram.png" alt="测试图片" /></div>,
+                                     description: <div ><img className="size-10" src="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect/element-box-diagram.png" alt="测试图片" /></div>,
                                     side: "bottom",
                                     align: "start"
                                 }
