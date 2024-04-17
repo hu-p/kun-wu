@@ -34,6 +34,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
+        label: 'Button',
         onClick: () => console.log('Button Clicked'),
         disabled: false
     }
