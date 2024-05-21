@@ -37,6 +37,7 @@ export default defineConfig({
     }
   },
   build: {
+    target: 'es2015', // 或者根据你的目标环境调整
     lib: {
       // 入口文件将包含可以由你的包的用户导入的导出：
       entry: resolve(__dirname, "src/main.ts"),
@@ -56,5 +57,10 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[ext]',
       },
     },
+    cssCodeSplit: true, // 分离CSS为单独的文件
+    minify: true, // 生产环境启用代码压缩
+  },
+  optimizeDeps: {
+    include: ['@babel/runtime'], // 确保@babel/runtime被预解析
   },
 });

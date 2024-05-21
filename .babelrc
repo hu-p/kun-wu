@@ -1,0 +1,11 @@
+{
+    "presets": [
+        "@babel/preset-env", // 转译环境依赖的JavaScript特性
+        "@babel/preset-react" // 处理JSX语法
+    ],
+    "plugins": [
+        // 可能需要的其他插件，例如Babel的类属性和对象展开等
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-nullish-coalescing-operator"
+    ]
+}

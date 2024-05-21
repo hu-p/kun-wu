@@ -1,6 +1,6 @@
 {
   "name": "kun-wu",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "kun-wu",
   "author": {
     "name": "Peng Hu",
@@ -48,6 +48,9 @@
     "chromatic": "npx chromatic --project-token=chpt_c0a2df297516f94"
   },
   "dependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
