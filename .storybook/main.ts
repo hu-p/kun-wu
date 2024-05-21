@@ -10,6 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
     name: "@storybook/react-vite",
@@ -17,10 +18,9 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: true,
+    reactDocgen: "react-docgen-typescript"
   },
-  docs: {
-    autodocs: "tag",
-  },
+  docs: {},
 
 
   //在stories下可以访问到src/main.ts下的组件,tsconfig.json也需要配置
